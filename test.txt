@@ -1,3 +1,4 @@
 test.txt
 
 This is the new content.
+This is the new content.
