@@ -1,1 +1,22 @@
-html page
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirect Example</title>
+    <script>
+        // Đoạn mã JavaScript ở đây
+        const pathArray = window.location.pathname.split('/');
+        const id = pathArray[pathArray.length - 1];
+
+        if (!isNaN(id) && id.trim() !== '') {
+            const redirectUrl = `https://www.tiktok.com/@giadungtienich_100/video/${id}`;
+            window.location.href = redirectUrl;
+        } else {
+            console.error('ID không hợp lệ.');
+        }
+    </script>
+</head>
+<body>
+</body>
+</html>
